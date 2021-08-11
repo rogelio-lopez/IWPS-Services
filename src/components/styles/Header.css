@@ -1,0 +1,97 @@
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+/* Logo */
+.header__logo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  margin: 10px 20px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--blue-color);
+  cursor: pointer;
+}
+.header__logo span:nth-child(1){
+  font-size: 1.7rem;
+  letter-spacing: 7px;
+}
+.header__logo span:nth-child(2){
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding-left: 2px;
+  border-top: 2px solid var(--yellow-color);
+}
+
+/* Nav Links */
+.header nav{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0px 20px;
+}
+.header Button{
+  font-weight: 600;
+  color: var(--blue-color);
+}
+
+/* Contact Button */
+.header .header__contact{
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  color: white;
+  background-color: var(--blue-color);
+}
+.header .header__contact:hover{
+  color: var(--blue-color);
+  box-shadow: none;
+}
+
+.header__burgerMenu{
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .header nav,
+  .header .header__contact{
+    display: none;
+  }
+  .header__burgerMenu{
+    display: flex;
+  }
+}
+
+/* Burger menu active */
+.header__burgerMenu{
+  position: absolute;
+  bottom: -200px;
+  right: 20px;
+  flex-direction: column;
+}
+.header .header__Burgercontact{
+  color: white;
+  background-color: var(--blue-color);
+}
+.header .header__Burgercontact:hover{
+  color: var(--blue-color);
+  box-shadow: none;
+}

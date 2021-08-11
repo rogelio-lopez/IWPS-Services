@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+
+  /* Colors */
+  --blue-color: #20225f;
+  --yellow-color: #f2c812;
+  --grey-color: #e3e3e3;
+
+  /* Fonts */
+  --primary-font: 'Roboto';
+  --secondary-font: 'Faustina';
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Type Scale */
+body {
+  font-size: 100%;
+  font-family: var(--primary-font), var(--secondary-font);
+  font-weight: 400;
+  color: #000000;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small{font-size: 0.8rem;}

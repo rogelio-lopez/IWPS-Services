@@ -1,0 +1,56 @@
+.burger{
+    z-index: 20;
+    display: none;
+    position: absolute;
+    bottom: 13px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.burger span{
+    position: absolute;
+    top: 45%;
+    height: 3px;
+    width: 25px;
+}
+.burger span::before,
+.burger span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25px;
+}
+.burger span,
+.burger span::before,
+.burger span::after{ 
+    transition: .35s;
+    border-radius: 5px;
+    background: var(--blue-color); 
+}
+.burger span::before{
+    top: -.6rem;
+}
+.burger span::after{
+    top: .6rem;
+}
+
+/* Burger Animation */
+.burger-active.burger span{
+    background: rgba(0, 0, 0, 0);
+}
+.burger-active.burger span::before{
+    top: 0;
+    transform: rotate(45deg);
+}
+.burger-active.burger span::after{
+    top: 0;
+    transform: rotate(135deg);  
+}
+
+@media screen and (max-width: 768px){
+    .burger{
+        display: initial;
+    }
+}
