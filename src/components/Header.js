@@ -4,31 +4,24 @@ import { Button } from '@material-ui/core';
 import Burger from './Burger.js';
 
 function Header({toggleBurger, setToggleBurger}) {
+
   return (
     <header className="header">
-      <a className='header__logo'>
+      <a className='header__logo' href="#home">
         <span>IWPS</span>
         <span>SERVICES</span>
       </a>
 
       <nav>
-        <Button>about</Button>
-        <Button>services</Button>
-        <Button>prices</Button>
-        <Button>team</Button>
+        <Button><a href="#about">about</a></Button>
+        <Button><a href="#team">team</a></Button>
+        <Button><a href="#prices">prices</a></Button>
       </nav>
 
-      <Button className="header__contact" variant="contained">contact</Button>
+      <Button className="header__contact" variant="contained"><a href="#contact">contact</a></Button>
 
-
+      {/* Burger for Sidebar */}
       <Burger toggleBurger={toggleBurger} setToggleBurger={setToggleBurger}/>
-      <div className="header__burgerMenu">
-        <Button>about</Button>
-        <Button>services</Button>
-        <Button>prices</Button>
-        <Button>team</Button>
-        <Button className="header__Burgercontact" variant="contained">contact</Button>
-      </div>
 
     </header>
   )

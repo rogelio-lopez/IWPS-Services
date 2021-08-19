@@ -1,0 +1,36 @@
+.sidebar{
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100px;
+  transform: translateX(150px);
+  transition: .25s;
+}
+.sidebar-active{
+  transform: translateX(0px);
+  transition: .25s .25s;
+}
+.sidebar Button{
+  color: var(--blue-color);
+  font-weight: 600;
+  margin-top: 5px;
+}
+.sidebar a{
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .sidebar{
+    display: flex;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sidebar{
+    right: 20px;
+  }
+}

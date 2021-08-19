@@ -1,0 +1,62 @@
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0 20px 0;
+  background: #F3F2F2;
+}
+#team h2 {
+  border-bottom: solid 2px var(--yellow-color);
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  color: var(--blue-color);
+}
+
+.team__content {
+  display: flex;
+  padding: 20px 30px;
+  max-width: 1024px;
+}
+.team__profileImg{
+  height: 200px;
+  width: 200px;
+  border-radius: 99%;
+  background-image: url('../../images/don-octi.jpg');
+  background-position: center;
+}
+.team__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-weight: 600;
+  padding-left: 50px;
+}
+.team__text h3{
+  color: var(--blue-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.team__text p{
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .team__content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__profileImg{
+    margin: 20px 0;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+  }
+  .team__text{
+    padding: 0;
+  }
+}

@@ -16,12 +16,12 @@ header{
 .header__logo{
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   height: fit-content;
-  margin: 10px 20px;
+  margin: 10px 0;
   font-family: var(--secondary-font);
   font-weight: 600;
   white-space: nowrap;
@@ -30,12 +30,13 @@ header{
 }
 .header__logo span:nth-child(1){
   font-size: 1.7rem;
+  font-weight: 700;
   letter-spacing: 7px;
 }
 .header__logo span:nth-child(2){
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   padding-left: 2px;
   border-top: 2px solid var(--yellow-color);
 }
@@ -44,29 +45,34 @@ header{
 .header nav{
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 250px;
   margin: 0px 20px;
 }
 .header Button{
   font-weight: 600;
   color: var(--blue-color);
 }
+.header a{
+  text-decoration: none;
+  color: var(--blue-color);
+}
 
 /* Contact Button */
 .header .header__contact{
   position: absolute;
-  right: 20px;
+  right: 30px;
   bottom: 0;
-  color: white;
   background-color: var(--blue-color);
 }
 .header .header__contact:hover{
   color: var(--blue-color);
   box-shadow: none;
 }
-
-.header__burgerMenu{
-  display: none;
+.header .header__contact:hover a{
+  color: var(--blue-color);
+}
+.header .header__contact a{
+  color: white;
 }
 
 /* Media Queries */
@@ -75,23 +81,9 @@ header{
   .header .header__contact{
     display: none;
   }
-  .header__burgerMenu{
-    display: flex;
+}
+@media screen and (max-width: 375px) {
+  .header__logo{
+    left: 15px;
   }
-}
-
-/* Burger menu active */
-.header__burgerMenu{
-  position: absolute;
-  bottom: -200px;
-  right: 20px;
-  flex-direction: column;
-}
-.header .header__Burgercontact{
-  color: white;
-  background-color: var(--blue-color);
-}
-.header .header__Burgercontact:hover{
-  color: var(--blue-color);
-  box-shadow: none;
 }

@@ -1,9 +1,9 @@
 import './App.css';
 import Home from './sections/Home';
 import About from './sections/About';
-import Services from './sections/Services';
+// import Services from './sections/Services';
 import Prices from './sections/Prices';
-import Training from './sections/Training';
+import Team from './sections/Team';
 import Contact from './sections/Contact';
 
 function App() {
@@ -17,16 +17,20 @@ function App() {
 
         <About />
 
-        <Services />
+        {/* <Services /> */}
+
+        <Team />
 
         <Prices />
-
-        <Training />
 
         <Contact />
       </main>
 
-      {/* Footer */}
+      <footer>
+        <p>
+          Made with <i className="fas fa-heart"></i> & <i className="fas fa-coffee"></i> by <a href="http://rogeliolopez.dev" target="_blank" rel="noreferrer">Rogelio Lopez</a>
+        </p>
+      </footer>
 
     </div>
   );

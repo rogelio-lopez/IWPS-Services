@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles/Home.css';
 import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 
 
 function Home() {
@@ -12,12 +13,14 @@ function Home() {
 
       <Header toggleBurger={toggleBurger} setToggleBurger={setToggleBurger}/>
 
+      <Sidebar toggleBurger={toggleBurger}/>
+
       {/* if toggle make padding larger */}
       <div className="home__container">
         <div className="home__bgImage"></div>
         <div className="home__text">
           <p>YOUR LOCAL BUSINESS GROWTH PARTNER</p>
-          <p>Bookkeeping and Accounting Services for Small Businesses</p>
+          <p><span>Bookkeeping</span> and <span>Accounting</span> Services for Small Businesses</p>
         </div>
       </div>         
     </section>

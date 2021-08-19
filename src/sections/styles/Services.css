@@ -1,11 +1,11 @@
-.services{
+#services{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px 0;
 }
 /* service header */
-.services > h2{
-    font-size: 40px;
+#services > h2{
     margin-bottom: 5px;
 }
 
@@ -44,7 +44,7 @@
 
 
 .services__info{
-    width: 85%;
+    width: 100%;
     padding: 30px;
 }
 /* information card */
@@ -61,18 +61,14 @@
 
 /* info card round image */
 .services__img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 999px;
-    width: 350px;
-    height: 350px;
-    overflow: hidden;
+    border-radius: 99%;
+    width: 300px;
+    height: 300px;
     transition: .2s ease-out;
-}
-.services__img > img{
-    object-fit: contain;
-    height: 350px;
+    background-image: url(../../images/calendar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media screen and (max-width: 980px){
     .services__img{
